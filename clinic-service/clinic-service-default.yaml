@@ -22,6 +22,12 @@ spring:
   security:
     oauth2:
       jwt-key: MjWP5L7CiDff90qA
+      client:
+        client-id: clinic-service
+        client-secret: 21clinic197_11_service
+        authorization-grant-type: client_credentials
+        scope: read
+        access-token-uri: http://localhost:9000/oauth/token
 management:
   endpoints:
     web:

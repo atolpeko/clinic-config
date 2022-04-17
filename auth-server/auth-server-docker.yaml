@@ -38,6 +38,28 @@ oauth:
       accessTokenValiditySeconds: 1800
       refreshTokenValiditySeconds: 43200
 
+    - name: clinic-service
+      password: 21clinic197_11_service
+      grantTypes:
+        - client_credentials
+      authorities:
+        - INTERNAL
+      scopes:
+        - read
+      accessTokenValiditySeconds: 1800
+      refreshTokenValiditySeconds: 43200  
+
+    - name: employee-service
+      password: empl_156service_13
+      grantTypes:
+        - client_credentials
+      authorities:
+        - INTERNAL
+      scopes:
+        - read
+      accessTokenValiditySeconds: 1800
+      refreshTokenValiditySeconds: 43200      
+
     - name: registration-service
       password: reg_554_service14
       grantTypes:
