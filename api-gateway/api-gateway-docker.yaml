@@ -41,9 +41,6 @@ spring:
           uri: lb://admin-server
           predicates:
             - Path=/admin/**
-  security:
-    oauth2:
-      jwt-key: MjWP5L7CiDff90qA
 management:
   endpoints:
     web:

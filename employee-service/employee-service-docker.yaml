@@ -1,5 +1,5 @@
 server:
-  port: 6120
+  port: 5960
 eureka:
   instance:
     prefIpAdress: true;
@@ -15,7 +15,7 @@ spring:
       ddl-auto: update
   datasource:
     platform: mysql
-    url: jdbc:mysql://mysql/clinic?createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql/employee?createDatabaseIfNotExist=true
     username: root
     password: clinic33789
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -23,8 +23,8 @@ spring:
     oauth2:
       jwt-key: MjWP5L7CiDff90qA
       client:
-        client-id: clinic-service
-        client-secret: 21clinic197_11_service
+        client-id: employee-service
+        client-secret: empl_156service_13
         authorization-grant-type: client_credentials
         scope: read
         access-token-uri: http://auth-server:9000/oauth/token

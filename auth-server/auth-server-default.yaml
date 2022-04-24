@@ -15,7 +15,7 @@ spring:
 database:
   clinic-employee-database:
     platform: mysql
-    url: jdbc:mysql://localhost:3306/clinic?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/employee?createDatabaseIfNotExist=true
     username: root
     password:
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -37,6 +37,28 @@ oauth:
         - write
       accessTokenValiditySeconds: 1800
       refreshTokenValiditySeconds: 43200
+
+    - name: clinic-service
+      password: 21clinic197_11_service
+      grantTypes:
+        - client_credentials
+      authorities:
+        - INTERNAL
+      scopes:
+        - read
+      accessTokenValiditySeconds: 1800
+      refreshTokenValiditySeconds: 43200  
+
+    - name: employee-service
+      password: empl_156service_13
+      grantTypes:
+        - client_credentials
+      authorities:
+        - INTERNAL
+      scopes:
+        - read
+      accessTokenValiditySeconds: 1800
+      refreshTokenValiditySeconds: 43200    
 
     - name: registration-service
       password: reg_554_service14
